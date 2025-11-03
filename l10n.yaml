@@ -1,0 +1,5 @@
+arb-dir: assets/languages
+template-arb-file: app_en.arb
+output-dir: lib/core/languages
+output-localization-file: app_languages.dart
+output-class: Languages
