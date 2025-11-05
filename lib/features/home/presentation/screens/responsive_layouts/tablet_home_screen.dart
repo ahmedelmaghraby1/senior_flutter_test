@@ -11,9 +11,7 @@ import 'package:senior_flutter_test/features/home/presentation/widgets/shared_wi
 import 'package:senior_flutter_test/features/home/providers/providers.dart';
 
 class TabletHomeScreen extends ConsumerStatefulWidget {
-  final void Function() onLoad;
-
-  const TabletHomeScreen({super.key, required this.onLoad});
+  const TabletHomeScreen({super.key});
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
@@ -52,11 +50,7 @@ class _TabletHomeScreenState extends ConsumerState<TabletHomeScreen>
                         Container(
                           padding: EdgeInsetsDirectional.symmetric(
                             vertical: 12.h,
-                            // horizontal: 80.w,
                           ),
-
-                          // width: 1280.w,
-                          // height: 72.h,
                           child: Row(
                             children: [
                               Text(
@@ -79,8 +73,6 @@ class _TabletHomeScreenState extends ConsumerState<TabletHomeScreen>
                                   ),
                                   CustomVerticalDivider(height: 48.h),
                                   Container(
-                                    // width: 177.w,
-                                    // height: 48.h,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(
                                         100.r,
@@ -133,23 +125,10 @@ class _TabletHomeScreenState extends ConsumerState<TabletHomeScreen>
                       ],
                     ),
                   ),
-                  // GridView.builder(
-                  //   itemCount: 4,
-                  //   itemBuilder: (context, index) => tabletTripWidget(),
-                  //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  //     crossAxisCount: 4,
-                  //     mainAxisSpacing: 20.h,
-                  //     crossAxisSpacing: 20.w,
-                  //     childAspectRatio: 243.25.w / 322.h,
-                  //   ),
-
-                  //   // itemBuilder: (BuildContext context, int index) =>
-                  //   //     tabletTripWidget(),
-                  // ),
-                  Container(color: context.appColor.brown),
-                  Container(color: context.appColor.secondaryColor),
-                  Container(color: context.appColor.secondaryColor),
-                  Container(color: context.appColor.secondaryColor),
+                  Container(),
+                  Container(),
+                  Container(),
+                  Container(),
                 ],
               ),
             ),

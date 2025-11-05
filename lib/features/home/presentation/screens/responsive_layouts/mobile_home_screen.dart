@@ -10,9 +10,7 @@ import 'package:senior_flutter_test/features/home/presentation/widgets/responsiv
 import 'package:senior_flutter_test/features/home/providers/providers.dart';
 
 class MobileHomeScreen extends ConsumerWidget {
-  final void Function() onLoad;
-
-  const MobileHomeScreen({super.key, required this.onLoad});
+  const MobileHomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

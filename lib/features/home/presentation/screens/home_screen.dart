@@ -25,26 +25,13 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        onLoad();
         return context.responsiveUI == ResponsiveUI.abnormal
             ? IncreaseTheHeight()
             : context.responsiveUI == ResponsiveUI.mobile
-            ? MobileHomeScreen(
-                onLoad: () {
-                  onLoad();
-                },
-              )
+            ? MobileHomeScreen()
             : context.responsiveUI == ResponsiveUI.web
-            ? WebHomeScreen(
-                onLoad: () {
-                  onLoad();
-                },
-              )
-            : TabletHomeScreen(
-                onLoad: () {
-                  onLoad();
-                },
-              );
+            ? WebHomeScreen()
+            : TabletHomeScreen();
       },
     );
   }

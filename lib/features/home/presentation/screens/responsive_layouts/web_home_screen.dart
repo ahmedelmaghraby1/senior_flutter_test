@@ -11,9 +11,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:senior_flutter_test/features/home/providers/providers.dart';
 
 class WebHomeScreen extends ConsumerStatefulWidget {
-  final void Function() onLoad;
-
-  const WebHomeScreen({super.key, required this.onLoad});
+  const WebHomeScreen({super.key});
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() => _WebHomeScreenState();
@@ -130,10 +128,10 @@ class _WebHomeScreenState extends ConsumerState<WebHomeScreen>
                     ),
                   ),
 
-                  Container(color: context.appColor.brown),
-                  Container(color: context.appColor.secondaryColor),
-                  Container(color: context.appColor.secondaryColor),
-                  Container(color: context.appColor.secondaryColor),
+                  Container(),
+                  Container(),
+                  Container(),
+                  Container(),
                 ],
               ),
             ),
