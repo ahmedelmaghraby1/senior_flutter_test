@@ -5,7 +5,6 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
-import 'app_languages_ar.dart';
 import 'app_languages_en.dart';
 
 // ignore_for_file: type=lint
@@ -92,16 +91,127 @@ abstract class Languages {
       ];
 
   /// A list of this localizations delegate's supported locales.
-  static const List<Locale> supportedLocales = <Locale>[
-    Locale('ar'),
-    Locale('en'),
-  ];
+  static const List<Locale> supportedLocales = <Locale>[Locale('en')];
 
   /// No description provided for @items.
   ///
   /// In en, this message translates to:
   /// **'Items'**
   String get items;
+
+  /// No description provided for @pricing.
+  ///
+  /// In en, this message translates to:
+  /// **'Pricing'**
+  String get pricing;
+
+  /// No description provided for @info.
+  ///
+  /// In en, this message translates to:
+  /// **'Info'**
+  String get info;
+
+  /// No description provided for @tasks.
+  ///
+  /// In en, this message translates to:
+  /// **'Tasks'**
+  String get tasks;
+
+  /// No description provided for @analytics.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytics'**
+  String get analytics;
+
+  /// No description provided for @addANewItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a New Item'**
+  String get addANewItem;
+
+  /// No description provided for @pendingApproval.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Approval'**
+  String get pendingApproval;
+
+  /// No description provided for @unfinishedTasks.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} Unfinished tasks'**
+  String unfinishedTasks(Object count);
+
+  /// No description provided for @tabItems.
+  ///
+  /// In en, this message translates to:
+  /// **'{type, select, items{Items} pricing{Pricing} info{Info} mosques{Mosques} tasks{Tasks} analytics{Analytics}  other{None}}'**
+  String tabItems(String type);
+
+  /// No description provided for @home.
+  ///
+  /// In en, this message translates to:
+  /// **'Home Page'**
+  String get home;
+
+  /// No description provided for @notification.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification'**
+  String get notification;
+
+  /// No description provided for @settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// No description provided for @filters.
+  ///
+  /// In en, this message translates to:
+  /// **'Filters'**
+  String get filters;
+
+  /// No description provided for @success.
+  ///
+  /// In en, this message translates to:
+  /// **'success'**
+  String get success;
+
+  /// No description provided for @errorMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'OOPS! Something went wrong'**
+  String get errorMessage;
+
+  /// No description provided for @accessDeniedMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Access Denied, You have insufficient privileges'**
+  String get accessDeniedMessage;
+
+  /// No description provided for @connectionTimeOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Connection Time Out!'**
+  String get connectionTimeOut;
+
+  /// No description provided for @retry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get retry;
+
+  /// No description provided for @noInternetConnection.
+  ///
+  /// In en, this message translates to:
+  /// **'No internet connection'**
+  String get noInternetConnection;
+
+  /// No description provided for @thereIsNoData.
+  ///
+  /// In en, this message translates to:
+  /// **'There Is No Data'**
+  String get thereIsNoData;
 }
 
 class _LanguagesDelegate extends LocalizationsDelegate<Languages> {
@@ -114,7 +224,7 @@ class _LanguagesDelegate extends LocalizationsDelegate<Languages> {
 
   @override
   bool isSupported(Locale locale) =>
-      <String>['ar', 'en'].contains(locale.languageCode);
+      <String>['en'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_LanguagesDelegate old) => false;
@@ -123,8 +233,6 @@ class _LanguagesDelegate extends LocalizationsDelegate<Languages> {
 Languages lookupLanguages(Locale locale) {
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'ar':
-      return LanguagesAr();
     case 'en':
       return LanguagesEn();
   }

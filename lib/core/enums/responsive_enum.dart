@@ -1,1 +1,1 @@
-enum ResponsiveUI { mobile, tablet, web }
+enum ResponsiveUI { mobile, tablet, web, abnormal }

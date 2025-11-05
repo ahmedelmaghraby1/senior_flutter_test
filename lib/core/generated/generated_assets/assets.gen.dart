@@ -14,6 +14,38 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart' as _svg;
 import 'package:vector_graphics/vector_graphics.dart' as _vg;
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  /// File path: assets/fonts/Inter_28pt-Bold.ttf
+  String get inter28ptBold => 'assets/fonts/Inter_28pt-Bold.ttf';
+
+  /// File path: assets/fonts/Inter_28pt-ExtraLight.ttf
+  String get inter28ptExtraLight => 'assets/fonts/Inter_28pt-ExtraLight.ttf';
+
+  /// File path: assets/fonts/Inter_28pt-Medium.ttf
+  String get inter28ptMedium => 'assets/fonts/Inter_28pt-Medium.ttf';
+
+  /// File path: assets/fonts/Inter_28pt-Regular.ttf
+  String get inter28ptRegular => 'assets/fonts/Inter_28pt-Regular.ttf';
+
+  /// File path: assets/fonts/Inter_28pt-SemiBold.ttf
+  String get inter28ptSemiBold => 'assets/fonts/Inter_28pt-SemiBold.ttf';
+
+  /// File path: assets/fonts/Inter_28pt-Thin.ttf
+  String get inter28ptThin => 'assets/fonts/Inter_28pt-Thin.ttf';
+
+  /// List of all assets
+  List<String> get values => [
+    inter28ptBold,
+    inter28ptExtraLight,
+    inter28ptMedium,
+    inter28ptRegular,
+    inter28ptSemiBold,
+    inter28ptThin,
+  ];
+}
+
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
@@ -69,11 +101,24 @@ class $AssetsImagesGen {
   List<AssetGenImage> get values => [testImage, userImage];
 }
 
+class $AssetsLocalDataAssetsGen {
+  const $AssetsLocalDataAssetsGen();
+
+  /// File path: assets/local_data_assets/trips_mock.json
+  String get tripsMock => 'assets/local_data_assets/trips_mock.json';
+
+  /// List of all assets
+  List<String> get values => [tripsMock];
+}
+
 class Assets {
   const Assets._();
 
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsLocalDataAssetsGen localDataAssets =
+      $AssetsLocalDataAssetsGen();
 }
 
 class AssetGenImage {

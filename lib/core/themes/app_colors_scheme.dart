@@ -19,6 +19,7 @@ abstract class AppColorScheme {
   Color get grey => const Color(0xff999999);
 
   Color get brown => const Color(0xffC25F30);
+  Color get turquoise => const Color(0xff33BFED);
 
   Color get lightGrey => const Color(0xffD9D9D9);
 
@@ -27,6 +28,17 @@ abstract class AppColorScheme {
   Color get errorColor => Colors.red;
 
   Color get successColor => Colors.green;
+
+  Gradient tripContainerGradient = LinearGradient(
+    colors: [
+      Colors.transparent,
+      Color(0xFF171717).withOpacity(0.5),
+      Color(0xFF171717).withOpacity(1),
+    ],
+    begin: AlignmentDirectional.topCenter,
+    end: AlignmentDirectional.bottomCenter,
+    stops: [0.1, 0.4, 0.5],
+  );
 }
 
 class AppDarkColors extends AppColorScheme {

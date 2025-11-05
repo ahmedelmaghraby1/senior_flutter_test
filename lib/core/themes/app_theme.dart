@@ -39,10 +39,16 @@ class AppTheme {
         ),
         titleSmall: TextStyle(
           fontSize: 14,
+          fontWeight: FontWeight.w400,
+          color: _appColorScheme.textColor.white,
+        ),
+
+        titleMedium: TextStyle(
+          fontSize: 14,
           fontWeight: FontWeight.w500,
           color: _appColorScheme.textColor.white,
         ),
-        titleMedium: TextStyle(
+        bodyLarge: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.w400,
           color: _appColorScheme.textColor.white,
@@ -58,10 +64,31 @@ class AppTheme {
           color: _appColorScheme.textColor.yellow,
         ),
       ),
+      drawerTheme: DrawerThemeData(
+        backgroundColor: _appColorScheme.primaryColor,
+      ),
       appBarTheme: AppBarTheme(
+        leadingWidth: 30,
+        iconTheme: IconThemeData(color: _appColorScheme.whiteColor),
         elevation: 0,
         backgroundColor: _appColorScheme.primaryColor,
         foregroundColor: _appColorScheme.primaryColor,
+      ),
+      tabBarTheme: TabBarThemeData(
+        indicatorColor: _appColorScheme.secondaryColor,
+        indicatorSize: TabBarIndicatorSize.label,
+        dividerHeight: 0,
+        dividerColor: Colors.transparent,
+        labelStyle: TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.w500,
+          color: _appColorScheme.textColor.white,
+        ),
+        unselectedLabelStyle: TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.w400,
+          color: _appColorScheme.textColor.lightGrey,
+        ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
