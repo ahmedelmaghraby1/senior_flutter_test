@@ -17,12 +17,12 @@ class MobileAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Assets.icons.logo.svg(width: 82, height: 40),
       actions: [
         Tooltip(
-          message: context.translations.items,
+          message: context.translations.settings,
           child: Assets.icons.settingsIcon.svg(width: 24, height: 24),
         ),
         SizedBox(width: 12.w),
         Tooltip(
-          message: context.translations.items,
+          message: context.translations.notification,
           child: Assets.icons.notification.svg(width: 24, height: 24),
         ),
         SizedBox(width: 12.w),

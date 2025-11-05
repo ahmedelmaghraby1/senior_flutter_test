@@ -47,11 +47,11 @@ class WebAppBar extends StatelessWidget {
             children: [
               CustomVerticalDivider(),
               Tooltip(
-                message: context.translations.items,
+                message: context.translations.settings,
                 child: Assets.icons.settingsIcon.svg(width: 24.w, height: 24),
               ),
               Tooltip(
-                message: context.translations.items,
+                message: context.translations.notification,
                 child: Assets.icons.notification.svg(width: 24.w, height: 24),
               ),
               CustomVerticalDivider(),
