@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:senior_flutter_test/core/enums/responsive_enum.dart';
+import 'package:senior_flutter_test/core/enums/trip_status_enum.dart';
 import 'package:senior_flutter_test/core/extensions/responsive.dart';
 import 'package:senior_flutter_test/core/extensions/screen_size.dart';
 import 'package:senior_flutter_test/core/extensions/theme.dart';
@@ -100,7 +101,9 @@ class TabletTripWidget extends StatelessWidget {
                               fontSize: 12.sp,
                             ),
                           ),
-                          Icon(Icons.keyboard_arrow_down, size: 16),
+                          if (!(setTripStatus(status: trip.status) ==
+                              TripStatus.ready))
+                            Icon(Icons.keyboard_arrow_down, size: 16),
                         ],
                       ),
                     ),
