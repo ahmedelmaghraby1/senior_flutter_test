@@ -18,5 +18,6 @@
     "connectionTimeOut": "Connection Time Out!",
     "retry": "Retry",
     "noInternetConnection": "No internet connection",
-    "thereIsNoData": "There Is No Data"
+    "thereIsNoData": "There Is No Data",
+    "increaseTheHeight": "increase the height!"
 }

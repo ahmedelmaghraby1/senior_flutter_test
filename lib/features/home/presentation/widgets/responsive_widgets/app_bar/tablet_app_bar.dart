@@ -62,7 +62,6 @@ class TabletAppBar extends StatelessWidget {
                   Assets.images.userImage.image(width: 32.w, height: 32),
                   SizedBox(width: 10),
                   SizedBox(
-                    // width: 100.w,
                     child: Text(
                       'John Doe',
                       style: context.textTheme.bodyLarge?.copyWith(

@@ -212,6 +212,12 @@ abstract class Languages {
   /// In en, this message translates to:
   /// **'There Is No Data'**
   String get thereIsNoData;
+
+  /// No description provided for @increaseTheHeight.
+  ///
+  /// In en, this message translates to:
+  /// **'increase the height!'**
+  String get increaseTheHeight;
 }
 
 class _LanguagesDelegate extends LocalizationsDelegate<Languages> {
