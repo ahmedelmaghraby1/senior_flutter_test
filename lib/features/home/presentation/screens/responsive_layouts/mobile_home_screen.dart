@@ -34,7 +34,7 @@ class MobileHomeScreen extends ConsumerWidget {
                   ),
                 ),
                 CircleAvatar(
-                  radius: 20.r,
+                  radius: 20,
                   backgroundColor: context.appColor.containerColor,
                   child: Assets.icons.filtersIcon.svg(width: 20, height: 20),
                 ),

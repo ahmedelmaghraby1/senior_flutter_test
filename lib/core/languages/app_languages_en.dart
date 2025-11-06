@@ -83,5 +83,5 @@ class LanguagesEn extends Languages {
   String get thereIsNoData => 'There Is No Data';
 
   @override
-  String get increaseTheHeight => 'increase the height!';
+  String get increaseTheHeight => 'Increase the height!';
 }

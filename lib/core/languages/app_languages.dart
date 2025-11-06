@@ -216,7 +216,7 @@ abstract class Languages {
   /// No description provided for @increaseTheHeight.
   ///
   /// In en, this message translates to:
-  /// **'increase the height!'**
+  /// **'Increase the height!'**
   String get increaseTheHeight;
 }
 

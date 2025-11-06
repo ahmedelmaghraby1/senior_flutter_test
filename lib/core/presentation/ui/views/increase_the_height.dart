@@ -10,7 +10,7 @@ class IncreaseTheHeight extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Text(
-          context.translations.items,
+          context.translations.increaseTheHeight,
           style: context.textTheme.titleLarge,
         ),
       ),
